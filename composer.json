@@ -97,19 +97,28 @@
         "post-create-project-cmd": [
             "@php -r \"copy('.env.example', '.env');\"",
             "@php artisan key:generate"
+        ],
+        "vercel": [
+            "Aws\\Script\\Composer\\Composer::removeUnusedServices"
         ]
     },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "extra": {
         "laravel": {
             "dont-discover": [
                 "potsky/laravel-localization-helpers"
             ]
-        }
+        },
+        "aws/aws-sdk-php": [
+            "S3"
+        ]
     },
     "minimum-stability": "stable"
 }

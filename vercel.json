@@ -11,7 +11,9 @@
                     ".nowignore",
                     "public/vendor/**",
                     "public/assets/**",
-                    "resources/lang/**"
+                    "resources/lang/**",
+                    "tests/**",
+                    "database/**"
                 ]
             }
         },
