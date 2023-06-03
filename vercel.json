@@ -1,10 +1,15 @@
 {
   "version": 2,
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.3.3",
+      "exludeFiles":["node_modules/**", "now.json", ".nowignore","public/**"]
+    }
+  },
   "builds": [
     {
       "src": "/api/index.php",
-      "use": "vercel-php@0.3.3",
-      "excludeFiles": "public/**"
+      "use": "vercel-php@0.3.3"
     },
     { "src": "/public/**", "use": "@vercel/static" }
   ],
