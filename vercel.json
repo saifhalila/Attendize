@@ -9,9 +9,6 @@
                     "node_modules/**",
                     "now.json",
                     ".nowignore",
-                    "public/vendor/**",
-                    "public/assets/**",
-                    "resources/lang/**",
                     "tests/**",
                     "database/**"
                 ]
