@@ -10,7 +10,8 @@
                     "now.json",
                     ".nowignore",
                     "public/vendor/**",
-                    "public/assets/**"
+                    "public/assets/**",
+                    "resources/lang/**"
                 ]
             }
         },
