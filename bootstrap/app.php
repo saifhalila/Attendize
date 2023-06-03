@@ -52,4 +52,24 @@ $app->singleton(
 |
 */
 
+if (!file_exists('/tmp/cache')) {
+    mkdir('/tmp/cache');
+}
+
+if (!file_exists('/tmp/cache/data')) {
+    mkdir('/tmp/cache/data');
+}
+
+if (!file_exists('/tmp/sessions')) {
+    mkdir('/tmp/sessions');
+}
+
+if (!file_exists('/tmp/testing')) {
+    mkdir('/tmp/testing');
+}
+
+if (!file_exists('/tmp/views')) {
+    mkdir('/tmp/views');
+}
+
 return $app;
