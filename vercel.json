@@ -3,7 +3,7 @@
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.3.3",
-      "exludeFiles":["node_modules/**", "now.json", ".nowignore","public/**"]
+      "excludeFiles":["node_modules/**", "now.json", ".nowignore","public/**"]
     }
   },
   "builds": [
