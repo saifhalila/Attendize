@@ -75,7 +75,7 @@ Route::group(
             [UserLogoutController::class, 'doLogout']
         )->name('logout');
 
-        Route::group(['middleware' => ['installed']], function () {
+        Route::group(['middleware' => []], function () {
 
             /*
          * Login
@@ -237,7 +237,7 @@ Route::group(
         /*
      * Backend routes
      */
-        Route::group(['middleware' => ['auth', 'first.run']], function () {
+        Route::group(['middleware' => ['auth']], function () {
 
             /*
          * Edit User
