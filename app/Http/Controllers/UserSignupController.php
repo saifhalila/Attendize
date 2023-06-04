@@ -22,9 +22,9 @@ class UserSignupController extends Controller
 
     public function __construct(Guard $auth)
     {
-        if (Account::count() > 0 && !Utils::isAttendize()) {
-            return redirect()->route('login')->send();
-        }
+        // if (Account::count() > 0 && !Utils::isAttendize()) {
+        //     return redirect()->route('login')->send();
+        // }
 
         $this->auth = $auth;
 
@@ -90,12 +90,14 @@ class UserSignupController extends Controller
 
         if ($is_attendize) {
             // TODO: Do this async?
-            Mail::send(Lang::locale().'.Emails.ConfirmEmail',
+            Mail::send(
+                Lang::locale() . '.Emails.ConfirmEmail',
                 ['first_name' => $user->first_name, 'confirmation_code' => $user->confirmation_code],
                 function ($message) use ($request) {
                     $message->to($request->get('email'), $request->get('first_name'))
                         ->subject(trans("Email.attendize_register"));
-                });
+                }
+            );
         }
 
         session()->flash('message', 'Success! You can now login.');
