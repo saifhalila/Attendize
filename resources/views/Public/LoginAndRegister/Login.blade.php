@@ -9,7 +9,7 @@
             <div class="panel">
                 <div class="panel-body">
                     <div class="logo">
-                        {!!Html::image('assets/images/logo-dark.png')!!}
+                        {!!Html::image(config('attendize.cdn_url_static_assets').'/assets/images/logo-dark.png')!!}
                     </div>
 
                     @if(Session::has('failed'))
