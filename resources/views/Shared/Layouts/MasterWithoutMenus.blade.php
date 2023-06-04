@@ -8,7 +8,7 @@
         @include('Shared.Partials.GlobalMeta')
 
         <!--JS-->
-       {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/jquery/dist/jquery.min.js') !!}
+       {!! Html::script(config('attendize.cdn_url_static_assets').'/vendor/jquery/dist/jquery.min.js') !!}
         <!--/JS-->
 
         <!--Style-->
@@ -76,7 +76,7 @@
         </div>
 
         @include("Shared.Partials.LangScript")
-        {!!Html::script('assets/javascript/backend.js')!!}
+        {!!Html::script(config('attendize.cdn_url_static_assets').'/assets/javascript/backend.js')!!}
     </body>
     @include('Shared.Partials.GlobalFooterJS')
 </html>

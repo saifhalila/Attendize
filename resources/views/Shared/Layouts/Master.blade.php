@@ -131,7 +131,7 @@
 
 <!--JS-->
 @include("Shared.Partials.LangScript")
-{!! Html::script('assets/javascript/backend.js') !!}
+{!! Html::script(config('attendize.cdn_url_static_assets').'/assets/javascript/backend.js') !!}
 <script>
     $(function () {
         $.ajaxSetup({

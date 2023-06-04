@@ -23,12 +23,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js" integrity="sha256-0rg2VtfJo3VUij/UY9X0HJP7NET6tgAY98aMOfwP0P8=" crossorigin="anonymous"></script>
 
     {!! Html::script('https://maps.googleapis.com/maps/api/js?libraries=places&key='.config("attendize.google_maps_geocoding_key")) !!}
-    {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/geocomplete/jquery.geocomplete.min.js')!!}
-    {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/moment/moment.js')!!}
-    {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/fullcalendar/dist/fullcalendar.min.js')!!}
+    {!! Html::script(config('attendize.cdn_url_static_assets').'/vendor/geocomplete/jquery.geocomplete.min.js')!!}
+    {!! Html::script(config('attendize.cdn_url_static_assets').'/vendor/moment/moment.js')!!}
+    {!! Html::script(config('attendize.cdn_url_static_assets').'/vendor/fullcalendar/dist/fullcalendar.min.js')!!}
     <?php
     if(Lang::locale()!="en")
-        echo Html::script(config('attendize.cdn_url_static_assets').'vendor/fullcalendar/dist/lang/'.Lang::locale().'.js');
+        echo Html::script(config('attendize.cdn_url_static_assets').'/vendor/fullcalendar/dist/lang/'.Lang::locale().'.js');
     ?>
     {!! Html::style(config('attendize.cdn_url_static_assets').'vendor/fullcalendar/dist/fullcalendar.css')!!}
 

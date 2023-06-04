@@ -7,7 +7,7 @@
 
     {!! Html::style(config('attendize.cdn_url_static_assets').'assets/stylesheet/application.css') !!}
     {!! Html::style(config('attendize.cdn_url_static_assets').'assets/stylesheet/qrcode-check-in.css') !!}
-  {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/jquery/jquery.js') !!}
+  {!! Html::script(config('attendize.cdn_url_static_assets').'/vendor/jquery/jquery.js') !!}
 
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 
@@ -29,8 +29,8 @@
           });
       });
   </script>
-  {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/qrcode-scan/llqrcode.js') !!}
-  {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/qrcode-scan/webqr.js') !!}
+  {!! Html::script(config('attendize.cdn_url_static_assets').'/vendor/qrcode-scan/llqrcode.js') !!}
+  {!! Html::script(config('attendize.cdn_url_static_assets').'/vendor/qrcode-scan/webqr.js') !!}
 </head>
 <body>
   <div id="main">

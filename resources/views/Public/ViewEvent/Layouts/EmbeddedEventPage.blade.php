@@ -71,7 +71,7 @@
         @yield('content')
 
         @include("Shared.Partials.LangScript")
-        {!!Html::script('assets/javascript/frontend.js')!!}
+        {!!Html::script(config('attendize.cdn_url_static_assets').'/assets/javascript/frontend.js')!!}
 
         @if(isset($secondsToExpire))
         <script>

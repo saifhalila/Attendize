@@ -15,7 +15,7 @@
 
 @section('head')
     {!! Html::script('https://maps.googleapis.com/maps/api/js?libraries=places&key='.config("attendize.google_maps_geocoding_key")) !!}
-    {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/geocomplete/jquery.geocomplete.min.js')!!}
+    {!! Html::script(config('attendize.cdn_url_static_assets').'/vendor/geocomplete/jquery.geocomplete.min.js')!!}
 @stop
 
 @section('menu')
