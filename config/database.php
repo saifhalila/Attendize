@@ -76,6 +76,7 @@ return [
             'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'require',
+            'options' => ['endpoint' => 'ep-mute-recipe-239816']
         ],
 
         'sqlsrv' => [
