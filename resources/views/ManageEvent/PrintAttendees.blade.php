@@ -5,7 +5,7 @@
         </title>
 
         <!--Style-->
-       {!!Html::style(config('attendize.cdn_url_static_assets').'assets/stylesheet/application.css')!!}
+       {!!Html::style(config('attendize.cdn_url_static_assets').'/assets/stylesheet/application.css')!!}
         <!--/Style-->
 
         <style type="text/css">

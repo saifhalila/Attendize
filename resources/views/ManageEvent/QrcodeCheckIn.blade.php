@@ -5,8 +5,8 @@
       @lang("ManageEvent.attendize_qrcode_check_in"): {{ $event->title }}
   </title>
 
-    {!! Html::style(config('attendize.cdn_url_static_assets').'assets/stylesheet/application.css') !!}
-    {!! Html::style(config('attendize.cdn_url_static_assets').'assets/stylesheet/qrcode-check-in.css') !!}
+    {!! Html::style(config('attendize.cdn_url_static_assets').'/assets/stylesheet/application.css') !!}
+    {!! Html::style(config('attendize.cdn_url_static_assets').'/assets/stylesheet/qrcode-check-in.css') !!}
   {!! Html::script(config('attendize.cdn_url_static_assets').'/vendor/jquery/jquery.js') !!}
 
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
