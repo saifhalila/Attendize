@@ -1,5 +1,5 @@
-{!! Html::script('vendor/simplemde/dist/simplemde.min.js') !!}
-{!! Html::style('vendor/simplemde/dist/simplemde.min.css') !!}
+{!! Html::script(config('attendize.cdn_url_static_assets').'vendor/simplemde/dist/simplemde.min.js') !!}
+{!! Html::style(config('attendize.cdn_url_static_assets').'vendor/simplemde/dist/simplemde.min.css') !!}
 
 <script>
     $(function() {

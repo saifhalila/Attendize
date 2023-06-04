@@ -5,12 +5,12 @@
         @lang("Attendee.check_in", ["event"=>$event->title])
     </title>
 
-    {!! Html::script('vendor/vue/dist/vue.min.js') !!}
-    {!! Html::script('vendor/vue-resource/dist/vue-resource.min.js') !!}
+    {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/vue/dist/vue.min.js') !!}
+    {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/vue-resource/dist/vue-resource.min.js') !!}
 
-    {!! Html::style('assets/stylesheet/application.css') !!}
-    {!! Html::style('assets/stylesheet/check_in.css') !!}
-    {!! Html::script('vendor/jquery/dist/jquery.min.js') !!}
+    {!! Html::style(config('attendize.cdn_url_static_assets').'assets/stylesheet/application.css') !!}
+    {!! Html::style(config('attendize.cdn_url_static_assets').'assets/stylesheet/check_in.css') !!}
+    {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/jquery/dist/jquery.min.js') !!}
 
     @include('Shared/Layouts/ViewJavascript')
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
@@ -161,7 +161,7 @@ Vue.http.headers.common['X-CSRF-TOKEN'] = '{{ csrf_token() }}';
 </script>
 
 @include("Shared.Partials.LangScript")
-{!! Html::script('vendor/qrcode-scan/llqrcode.js') !!}
+{!! Html::script(config('attendize.cdn_url_static_assets').'vendor/qrcode-scan/llqrcode.js') !!}
 {!! Html::script('assets/javascript/check_in.js') !!}
 </body>
 </html>

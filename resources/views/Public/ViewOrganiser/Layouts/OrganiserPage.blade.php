@@ -30,7 +30,7 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-       {!!Html::style('assets/stylesheet/frontend.css')!!}
+       {!!Html::style(config('attendize.cdn_url_static_assets').'assets/stylesheet/frontend.css')!!}
         @yield('head')
     </head>
     <body class="attendize">

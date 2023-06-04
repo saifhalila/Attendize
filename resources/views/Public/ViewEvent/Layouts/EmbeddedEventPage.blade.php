@@ -34,7 +34,7 @@
         <![endif]-->
         @yield('head')
 
-       {!!Html::style('assets/stylesheet/frontend.css')!!}
+       {!!Html::style(config('attendize.cdn_url_static_assets').'assets/stylesheet/frontend.css')!!}
 
         <!--Bootstrap placeholder fix-->
         <style>

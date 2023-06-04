@@ -1,5 +1,5 @@
-{!! Html::script('vendor/simplemde/dist/simplemde.min.js') !!}
-{!! Html::style('vendor/simplemde/dist/simplemde.min.css') !!}
+{!! Html::script(config('attendize.cdn_url_static_assets').'vendor/simplemde/dist/simplemde.min.js') !!}
+{!! Html::style(config('attendize.cdn_url_static_assets').'vendor/simplemde/dist/simplemde.min.css') !!}
 <script>
 $(document).ready(function(){
     var charge_tax = $("input[type=radio][name='charge_tax']:checked").val();

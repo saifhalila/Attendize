@@ -8,11 +8,11 @@
         @include('Shared.Partials.GlobalMeta')
 
         <!--JS-->
-       {!! Html::script('vendor/jquery/dist/jquery.min.js') !!}
+       {!! Html::script(config('attendize.cdn_url_static_assets').'vendor/jquery/dist/jquery.min.js') !!}
         <!--/JS-->
 
         <!--Style-->
-       {!!Html::style('assets/stylesheet/application.css')!!}
+       {!!Html::style(config('attendize.cdn_url_static_assets').'assets/stylesheet/application.css')!!}
         <!--/Style-->
 
         @yield('head')
