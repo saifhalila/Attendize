@@ -10,6 +10,7 @@
                     "now.json",
                     ".nowignore",
                     "public/vendor/**",
+                    "public/assets/**",
                     "resources/lang/**",
                     "tests/**",
                     "database/**"
@@ -20,7 +21,7 @@
     ],
     "routes": [
         {
-            "src": "/(css|js)/(.*)",
+            "src": "/(vendor|assets)/(.*)",
             "dest": "public/$1/$2"
         },
         {
