@@ -76,7 +76,6 @@ return [
             'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'require',
-            'options' => ['endpoint' => env('DB_ENDPOINT_SNI')]
         ],
 
         'sqlsrv' => [
